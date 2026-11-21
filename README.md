@@ -25,17 +25,17 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://i.hizliresim.com/zbmeg56n.jpg" alt="WearCast Dark Mode" width="100%" />
+      <img src="docs/screenshots/dark-mode.jpg" alt="WearCast Dark Mode" width="100%" />
     </td>
     <td align="center">
-      <img src="https://i.hizliresim.com/rkhsgamh.jpg" alt="WearCast Light Mode" width="100%" />
+      <img src="docs/screenshots/light-mode.jpg" alt="WearCast Light Mode" width="100%" />
     </td>
   </tr>
 </table>
 
 <div align="center">
   <br/>
-  <img src="https://i.hizliresim.com/mzjtlqwj.png" alt="Country Selector" width="380" />
+  <img src="docs/screenshots/country-selector.png" alt="Country Selector" width="380" />
   <br/>
   <sub><strong>Country & Location Picker / Ülke ve Konum Seçici</strong></sub>
 </div>
@@ -121,6 +121,7 @@ npm run preview
 
 ```text
 wearcast/
+├── docs/screenshots/   # README preview images / Ekran görüntüleri
 ├── src/
 │   ├── components/     # UI components (Thermometer, Hourly/Weekly forecast, Alerts, etc.)
 │   ├── data/           # Turkey & world location datasets
