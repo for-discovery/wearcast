@@ -25,17 +25,17 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://hizliresim.com/zbmeg56n" alt="WearCast Dark Mode" width="100%" />
+      <img src="https://i.hizliresim.com/zbmeg56n.jpg" alt="WearCast Dark Mode" width="100%" />
     </td>
     <td align="center">
-      <img src="https://hizliresim.com/rkhsgamh" alt="WearCast Light Mode" width="100%" />
+      <img src="https://i.hizliresim.com/rkhsgamh.jpg" alt="WearCast Light Mode" width="100%" />
     </td>
   </tr>
 </table>
 
 <div align="center">
   <br/>
-  <img src="https://hizliresim.com/mzjtlqwj" alt="Country Selector" width="380" />
+  <img src="https://i.hizliresim.com/mzjtlqwj.png" alt="Country Selector" width="380" />
   <br/>
   <sub><strong>Country & Location Picker / Ülke ve Konum Seçici</strong></sub>
 </div>
