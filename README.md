@@ -1,12 +1,49 @@
 <div align="center">
 
-# WearCast
+# ⛅ WearCast
 
-**Günlük Hava ve Giyim Asistanı · Daily Weather & Outfit Assistant**
+**Daily Weather & Outfit Assistant · Günlük Hava ve Giyim Asistanı**
 
-[English](#-english) · [Türkçe](#-türkçe) · [Screenshots](#-screenshots--ekran-görüntüleri)
+[English](#-english) · [Screenshots](#-screenshots--ekran-görüntüleri) · [Türkçe](#-türkçe)
 
 </div>
+
+---
+
+## 🇬🇧 English
+
+**WearCast** is a modern web application that turns real-time weather forecasts into practical, hour-specific outfit recommendations. Pick your country, city, district, and departure time — WearCast analyzes temperature, "feels like" temperature, wind speed, humidity, and rain probability to suggest what to wear.
+
+### Key Features
+
+- **Smart Outfit Engine (`outfitEngine`)**: Recommends upper wear, footwear, and accessories tailored to exact weather conditions.
+- **Intraday Weather Alerts**: Highlights upcoming temperature drops, wind shifts, or rain after your chosen departure hour.
+- **7-Day Outlook**: Displays daily min/max temperatures, precipitation probability, and quick outfit summaries for the week ahead.
+- **Turkey & World Locations**: Built-in location support with automatic coordinate resolution via Open-Meteo Geocoding API.
+- **Adaptive Theme**: Supports automatic, light, and dark modes with a live animated weather & thermometer stage.
+- **Zero API Keys Needed**: Powered by [Open-Meteo](https://open-meteo.com/) Weather & Geocoding APIs with `localStorage` caching.
+
+### Tech Stack
+
+- **React 18** & **Vite 6**
+- **Tailwind CSS v4** (`@tailwindcss/vite`)
+- **Open-Meteo API** (Weather & Geocoding)
+
+### Getting Started
+
+```bash
+git clone https://github.com/for-discovery/wearcast.git
+cd wearcast
+npm install
+npm run dev
+```
+
+For a production build:
+
+```bash
+npm run build
+npm run preview
+```
 
 ---
 
@@ -50,43 +87,6 @@
     </td>
   </tr>
 </table>
-
----
-
-## 🇬🇧 English
-
-**WearCast** is a modern web application that turns real-time weather forecasts into practical, hour-specific outfit recommendations. Pick your country, city, district, and departure time — WearCast analyzes temperature, "feels like" temperature, wind speed, humidity, and rain probability to suggest what to wear.
-
-### Key Features
-
-- **Smart Outfit Engine (`outfitEngine`)**: Recommends upper wear, footwear, and accessories tailored to exact weather conditions.
-- **Intraday Weather Alerts**: Highlights upcoming temperature drops, wind shifts, or rain after your chosen departure hour.
-- **7-Day Outlook**: Displays daily min/max temperatures, precipitation probability, and quick outfit summaries for the week ahead.
-- **Turkey & World Locations**: Built-in location support with automatic coordinate resolution via Open-Meteo Geocoding API.
-- **Adaptive Theme**: Supports automatic, light, and dark modes with a live animated weather & thermometer stage.
-- **Zero API Keys Needed**: Powered by [Open-Meteo](https://open-meteo.com/) Weather & Geocoding APIs with `localStorage` caching.
-
-### Tech Stack
-
-- **React 18** & **Vite 6**
-- **Tailwind CSS v4** (`@tailwindcss/vite`)
-- **Open-Meteo API** (Weather & Geocoding)
-
-### Getting Started
-
-```bash
-git clone https://github.com/for-discovery/wearcast.git
-cd wearcast
-npm install
-npm run dev
-```
-
-For a production build:
-
-```bash
-npm run build
-npm run preview
-```
 
 ---
 
