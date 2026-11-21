@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-display: "Plus Jakarta Sans", "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* LIGHT THEME (1. Tema: Gökyüzü & Gün Işığı) */
+    --bg-top: #E6F0FA;
+    --bg-bot: #F4F8FC;
+    --card: #FFFFFF;
+    --card-raised: #E5EFFA;
+    --card-inset: #EFF5FB;
+    --text-primary: #0F2537;
+    --text-secondary: #3B556D;
+    --text-muted: #647D94;
+    --accent: #0284C7;
+    --accent-hover: #0369A1;
+    --accent-fg: #FFFFFF;
+    --accent-soft: rgba(2, 132, 199, 0.10);
+    --border: rgba(15, 37, 55, 0.10);
+    --border-soft: rgba(15, 37, 55, 0.07);
+    --cloud-1: #93C5FD;
+    --cloud-2: #BFDBFE;
+    --thermo-tube: #E2E8F0;
+    --thermo-stroke: #1E293B;
+    --card-shadow: 0 6px 24px rgba(15, 37, 55, 0.05);
+  }
+
+  [data-theme="dark"] {
+    /* DARK THEME (5. Tema: Gece Gökyüzü) */
+    --bg-top: #0B1324;
+    --bg-bot: #111D35;
+    --card: #162440;
+    --card-raised: #1D2F52;
+    --card-inset: #101B31;
+    --text-primary: #F1F5F9;
+    --text-secondary: #B6C5D8;
+    --text-muted: #7F93AC;
+    --accent: #38BDF8;
+    --accent-hover: #0EA5E9;
+    --accent-fg: #0B1324;
+    --accent-soft: rgba(56, 189, 248, 0.14);
+    --border: rgba(241, 245, 249, 0.12);
+    --border-soft: rgba(241, 245, 249, 0.08);
+    --cloud-1: #47628C;
+    --cloud-2: #364C70;
+    --thermo-tube: #1E293B;
+    --thermo-stroke: #0F172A;
+    --card-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    transition: background 300ms ease, color 250ms ease;
+  }
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.wc-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--card-shadow);
+  transition: background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
+}
+
+.wc-card-raised {
+  background-color: var(--card-raised);
+  border: 1px solid var(--accent);
+  box-shadow: var(--card-shadow);
+  transition: background-color 250ms ease, border-color 250ms ease;
+}
+
+.wc-inset {
+  background-color: var(--card-inset);
+  border: 1px solid var(--border-soft);
+  transition: background-color 250ms ease, border-color 250ms ease;
+}
+
+.clean-select {
+  appearance: none;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23647D94' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+.clean-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.wc-btn-primary {
+  background-color: var(--accent);
+  color: var(--accent-fg);
+  transition: background-color 150ms ease, transform 120ms ease, opacity 150ms ease;
+}
+
+.wc-btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.wc-btn-primary:active {
+  transform: scale(0.99);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 360ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* HAVA DURUMU SAHNE ANİMASYONLARI (Sola çekilmiş, termometreye asla taşmayan kontrollü salınım) */
+@keyframes wcSunSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wcSunPulse {
+  0%, 100% {
+    transform: scale(0.94);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes wcCloudDriftSlow {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(18px);
+  }
+}
+
+@keyframes wcCloudDriftFast {
+  0%, 100% {
+    transform: translateX(14px);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+}
+
+@keyframes wcRainFall {
+  0% {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.95;
+  }
+  88% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(108px);
+    opacity: 0;
+  }
+}
+
+@keyframes wcRainSplash {
+  0%, 82% {
+    transform: scaleX(0.2) scaleY(0.2);
+    opacity: 0;
+  }
+  90% {
+    transform: scaleX(1.1) scaleY(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scaleX(1.8) scaleY(0.4);
+    opacity: 0;
+  }
+}
+
+@keyframes wcSnowFall {
+  0% {
+    transform: translateY(-10px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.95;
+  }
+  50% {
+    transform: translateY(54px) translateX(7px) rotate(120deg);
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(112px) translateX(-6px) rotate(240deg);
+    opacity: 0;
+  }
+}
+
+.wc-sun-spin {
+  animation: wcSunSpin 26s linear infinite;
+}
+
+.wc-sun-pulse {
+  animation: wcSunPulse 3.8s ease-in-out infinite;
+}
+
+.wc-cloud-drift-slow {
+  animation: wcCloudDriftSlow 9s ease-in-out infinite;
+}
+
+.wc-cloud-drift-fast {
+  animation: wcCloudDriftFast 11s ease-in-out infinite;
+}
+
+.wc-raindrop {
+  animation-name: wcRainFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wc-rainsplash {
+  animation-name: wcRainSplash;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+.wc-snowflake {
+  animation-name: wcSnowFall;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
