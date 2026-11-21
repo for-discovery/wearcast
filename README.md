@@ -25,17 +25,17 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="docs/screenshots/dark-mode.jpg" alt="WearCast Dark Mode" width="100%" />
+      <img src="https://hizliresim.com/zbmeg56n" alt="WearCast Dark Mode" width="100%" />
     </td>
     <td align="center">
-      <img src="docs/screenshots/light-mode.jpg" alt="WearCast Light Mode" width="100%" />
+      <img src="https://hizliresim.com/rkhsgamh" alt="WearCast Light Mode" width="100%" />
     </td>
   </tr>
 </table>
 
 <div align="center">
   <br/>
-  <img src="docs/screenshots/country-selector.png" alt="Country Selector" width="380" />
+  <img src="https://hizliresim.com/mzjtlqwj" alt="Country Selector" width="380" />
   <br/>
   <sub><strong>Country & Location Picker / Ülke ve Konum Seçici</strong></sub>
 </div>
@@ -64,7 +64,7 @@
 ### Getting Started
 
 ```bash
-git clone https://github.com/<your-username>/wearcast.git
+git clone https://github.com/for-discovery/wearcast.git
 cd wearcast
 npm install
 npm run dev
@@ -121,7 +121,6 @@ npm run preview
 
 ```text
 wearcast/
-├── docs/screenshots/   # README preview images / Ekran görüntüleri
 ├── src/
 │   ├── components/     # UI components (Thermometer, Hourly/Weekly forecast, Alerts, etc.)
 │   ├── data/           # Turkey & world location datasets
