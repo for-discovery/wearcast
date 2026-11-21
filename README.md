@@ -16,29 +16,40 @@
   <tr>
     <td align="center" width="50%">
       <strong>Dark Mode / Koyu Tema</strong><br/>
-      <sub>İstanbul, Beyoğlu — 22:00 (13°C)</sub>
+      <sub>Denizli, Pamukkale — 00:07 (11°C, Çok Bulutlu)</sub>
     </td>
     <td align="center" width="50%">
       <strong>Light Mode / Açık Tema</strong><br/>
-      <sub>Riyad, Olaya — 12:00 (29°C)</sub>
+      <sub>Münih, Schwabing — 13:07 (6°C, Hafif Yağmurlu)</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="docs/screenshots/dark-mode.jpg" alt="WearCast Dark Mode" width="100%" />
+      <img src="docs/screenshots/dark-mode.png" alt="WearCast Dark Mode" width="100%" />
     </td>
     <td align="center">
-      <img src="docs/screenshots/light-mode.jpg" alt="WearCast Light Mode" width="100%" />
+      <img src="docs/screenshots/light-mode.png" alt="WearCast Light Mode" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Outfit & 7-Day Forecast / Kombin ve 7 Günlük Tahmin</strong><br/>
+      <sub>Üst giyim, ayakkabı, aksesuar ve gün içi uyarılar</sub>
+    </td>
+    <td align="center" width="50%">
+      <strong>Country & Location Picker / Ülke ve Konum Seçici</strong><br/>
+      <sub>Türkiye ve dünya şehirleri için hızlı konum seçimi</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/screenshots/outfit-and-forecast.jpg" alt="Outfit Recommendation and 7-Day Forecast" width="100%" />
+    </td>
+    <td align="center">
+      <img src="docs/screenshots/country-selector.png" alt="Country Selector" width="320" />
     </td>
   </tr>
 </table>
-
-<div align="center">
-  <br/>
-  <img src="docs/screenshots/country-selector.png" alt="Country Selector" width="380" />
-  <br/>
-  <sub><strong>Country & Location Picker / Ülke ve Konum Seçici</strong></sub>
-</div>
 
 ---
 
